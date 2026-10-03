@@ -20,10 +20,12 @@ Source: [`contracts/citelock.py`](contracts/citelock.py)
 
 GenLayer Studio network, chain ID `61999`. Deployed with the Rabby address `0x1942a9F07648b899C4d253897682d6Dc587448A1` on 2026-10-04.
 
-- [Contract](https://explorer-studio.genlayer.com/address/0x1325A7A434970C4750332A4f26E263576c52f079)
-- [Deployment transaction](https://explorer-studio.genlayer.com/tx/0xa7d1943bc0380b5b4b17fd017b685f7674594d8ddb70ea6e11bf1a0b3281896b)
+- [Contract](https://explorer-studio.genlayer.com/address/0x3877Df245aEf03c0eCb92646FbBa3Fb59b67486D)
+- [Deployment transaction](https://explorer-studio.genlayer.com/tx/0xc8080248e7addfaa192e2c71edf5e6fc493647cfa38704cc04960875cace61f9)
 
 Studio's deployment status was **ACCEPTED**. This is the Studio network; the address is not presented as a mainnet deployment.
+
+An [attestation transaction](https://explorer-studio.genlayer.com/tx/0xf1aae44d2b9d432fde1a110278f80a5ee24dfc0c31a769d67418f50e9a56ab7e) reached **ACCEPTED** consensus. `get_receipt("readme-self-attestation-1")` returned `SUPPORTED` for this README's first sentence at commit `6bab872d8749b5734d682ab57f9f4f72cc92be60`, with source SHA-256 `4375de099e02c74fd7a9e927e39f2dc5180b9bf314127e3862735592f4e1be89`.
 
 ## Try it
 

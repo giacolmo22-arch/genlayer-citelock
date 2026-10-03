@@ -53,8 +53,8 @@ class CiteLock(gl.Contract):
         source_url = f"https://raw.githubusercontent.com/{owner}/{repository}/{commit}/{path}"
 
         def evaluate() -> dict[str, str]:
-            response = gl.nondet.web.get(source_url)
-            if response.status_code != 200:
+            response = gl.nondet.web.request(source_url, method="GET")
+            if response.status != 200 or response.body is None:
                 raise gl.UserError("source was not available")
             body = response.body
             if len(body) > 65536:
